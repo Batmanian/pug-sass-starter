@@ -1,1 +1,40 @@
-#bottom {}
+//Border templates
+#bottom,
+#left,
+#right,
+#top {
+    background: rgba(255, 255, 0, .8);
+    position: fixed;
+}
+
+#bottom,
+#left,
+#right,
+.fixed-bottom {
+    bottom: 0;
+}
+
+#left,
+#right {
+    top: 0;
+    width: 2rem;
+}
+
+#right {
+    right: 0;
+}
+
+#left {
+    left: 0;
+}
+
+#bottom,
+#top {
+    left: 0;
+    right: 0;
+    height: 2rem;
+}
+
+#top {
+    top: 0;
+}
