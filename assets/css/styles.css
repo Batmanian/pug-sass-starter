@@ -10848,3 +10848,23 @@ a.text-dark:hover, a.text-dark:focus {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
+
+.radial-gradient {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  /*Fallback if gradeints don't work */
+  background: #77448b;
+  /*Linear gradient... */
+  background: -o-radial-gradient(at center, #2875a8, #714185);
+  background: radial-gradient(at center, #2875a8, #714185);
+}
+
+body,
+p,
+h1 {
+  color: rgba(255, 255, 0, 0.8);
+  text-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.5);
+}
