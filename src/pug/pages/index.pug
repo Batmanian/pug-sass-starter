@@ -1,39 +1,54 @@
 extends ../layouts/default-layout.pug
 block content
-  #content.centered
+  #content
     #avatar.container
-      .row
-        .col.pb-5
-          img.img-fluid(src="../assets/images/jack.jpg")
-          h1.pt-5.text-center Jack Dunstan
-    #social.row
-      .col.col-12.text-center.pb-5
-        <i class="fas fa-phone-square fa-4x"></i>    
-      .col-4.col-md-4.pb-5.text-center
-        <i class="fab fa-linkedin fa-4x"></i>  
-      .col-4.col-md-4.text-center
-        <i class="fab fa-twitter-square fa-4x"></i> 
-      .col-4.col-md-4.text-center
-        <i class="fab fa-instagram-square fa-4x"></i>  
-      .col-4.col-md-4.text-center
-        <i class="fab fa-github-square fa-4x"></i>  
-      .col-4.col-md-4.text-center
-        <i class="fas fa-coffee mt-2 fa-3x"></i>
-      .col-4.col-md-4.pb-5.text-center
-        <i class="fas fa-envelope-square fa-4x"></i> 
-      .col-4.col-md-4.text-center 
-        <i class="fab fa-lastfm-square fa-4x"></i>  
-      .col-4.col-md-4.text-center
-        <i class="fab fa-cc-paypal  mt-2 fa-3x"></i>  
-        
-      .col-4.col-md-4.pb-5.text-center  
-        <i class="fas fa-qrcode fa-4x"></i> 
-      .col-4.col-md-4.text-center  
-        <i class="fab fa-keybase fa-4x"></i>  
-      .col-4.col-md-4.text-center
-        <i class="fas fa-address-card mt-2 fa-3x"></i>
-      .col-4.col-md-4.text-center.pb-5  
-        <i class="fab fa-bitcoin mt-2 fa-3x"></i>
+      #title.row.pt-5
+        .col-8.offset-2.col-md-6.offset-md-3.col-lg-4.offset-lg-4.mt-5.pb-5
+          img.img-fluid.rounded(src="../assets/images/jack.jpg")
+        .col-12
+          h1.pb-5.text-center Jack Dunstan
+        .col-10.offset-1.col-sm-8.offset-sm-2.col-md-6.offset-md-3
+          #social.row.pb-5
+            .col-4.col-md-4.pb-5.text-center
+              a(href="https://www.linkedin.com/in/jackdunstan/")
+                i.fab.fa-linkedin.fa-4x  
+            .col-4.col-md-4.text-center  
+              a(href="/assets/images/dunstanet.png")
+                i.fas.fa-qrcode.fa-4x 
+            .col-4.col-md-4.text-center
+              a(href="https://twitter.com/Dunstanet")
+                i.fab.fa-twitter-square.fa-4x 
+            .col-4.col-md-4.text-center
+              a(href="https://www.instagram.com/dunstanistan/")  
+                i.fab.fa-instagram-square.fa-4x  
+            .col-4.col-md-4.pb-5.text-center
+              a(href="https://github.com/Batmanian")
+                i.fab.fa-github-square.fa-4x  
+            .col-4.col-md-4.text-center
+              p(data-toggle='tooltip', data-html='true', title='Long black, thanks')
+                i.fas.fa-coffee.mt-2.fa-3x    
+            .col-4.col-md-4.pb-5.text-center
+              a(href="mailto:jack@dunsta.net")
+                i.fas.fa-envelope-square.fa-4x 
+            .col-4.col-md-4.text-center 
+              a(href="https://www.last.fm/user/LordWaygood")
+                i.fab.fa-lastfm-square.fa-4x  
+            .col-4.col-md-4.text-center
+              a(href="https://www.paypal.me/wjackdunstan")
+                i.fab.fa-cc-paypal.mt-2.fa-3x  
+            
+            .col-4.col-md-4.text-center  
+              a(href="https://keybase.io/batmanian")
+                i.fab.fa-keybase.fa-4x    
+            .col-4.col-md-4.text-center
+              a(href="assets/downloads/JackDunstan.vcf" data-toggle='tooltip', data-html='true', title='Downloads my contact card')
+                i.fas.fa-address-card.mt-2.fa-3x
+            .col-4.col-md-4.text-center.pb-5  
+              a(href="bitcoin:1ALN2amtMax45mHnfTJ5oTfHTf6jSL9zCY")
+                i.fab.fa-bitcoin.mt-2.fa-3x
+            .col.col-12.text-center.pb-5
+              a(href="tel:+61434897112")
+                i.fas.fa-phone-square.fa-4x     
       
         
 

@@ -1,18 +1,4 @@
-.radial-gradient {
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    height: 100%;
-    width: 100%;
-    /*Fallback if gradeints don't work */
-    background: #77448b;
-    /*Linear gradient... */
-    background: radial-gradient( at center, #2875a8, #714185);
-}
-
-body,
-p,
-h1 {
-    color: rgba(255, 255, 0, 0.8);
-    text-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.5);
+img {
+    border: rgba(255, 255, 0, .8) 2rem solid;
+    box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.5);
 }
