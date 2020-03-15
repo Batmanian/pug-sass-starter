@@ -4,7 +4,10 @@ block content
     #avatar.container
       #title.row.pt-5
         .col-8.offset-2.col-md-6.offset-md-3.col-lg-4.offset-lg-4.mt-5.pb-5
-          img.img-fluid.rounded(src="../assets/images/jack.jpg")
+          #jack.active
+            img.img-fluid.rounded(src="../assets/images/jack.jpg")
+          #QR.inactive
+            img.img-fluid.rounded(src="../assets/images/dunstanet.svg")
         .col-12
           h1.pb-5.text-center Jack Dunstan
         .col-10.offset-1.col-sm-8.offset-sm-2.col-md-6.offset-md-3
@@ -12,9 +15,8 @@ block content
             .col-4.col-md-4.pb-5.text-center
               a(href="https://www.linkedin.com/in/jackdunstan/")
                 i.fab.fa-linkedin.fa-4x  
-            .col-4.col-md-4.text-center  
-              a(href="/assets/images/dunstanet.png")
-                i.fas.fa-qrcode.fa-4x 
+            .col-4.col-md-4.text-center.qrtoggle  
+              i.fas.fa-qrcode.fa-4x 
             .col-4.col-md-4.text-center
               a(href="https://twitter.com/Dunstanet")
                 i.fab.fa-twitter-square.fa-4x 
@@ -49,7 +51,17 @@ block content
             .col.col-12.text-center.pb-5
               a(href="tel:+61434897112")
                 i.fas.fa-phone-square.fa-4x     
-      
-        
+  script.
+     $(".qrtoggle").mouseover(function () {
+     $("#jack").toggleClass("active")
+     $("#jack").toggleClass("inactive");
+     $("#QR").toggleClass("active")
+     $("#QR").toggleClass("inactive");
+     });
 
-
+     $(element).on('touchstart click', function () {
+     $("#jack").toggleClass("active")
+     $("#jack").toggleClass("inactive");
+     $("#QR").toggleClass("active")
+     $("#QR").toggleClass("inactive");
+     });
